@@ -3,6 +3,7 @@ mod example;
 
 // use example
 use example::hello;
+use example::pertambahan;
 use std::string::String;
 
 //main example
@@ -23,7 +24,13 @@ fn main() {
     data.greet();
 
     //function from import
-    hello()
+    hello();
+
+    // pertambahan
+    let angka1 = 5;
+    let angka2 = 5;
+    let hasil = pertambahan(angka1, angka2);
+    println!("Hasil pertambahan: {}", hasil);
 }
 
 // function example
